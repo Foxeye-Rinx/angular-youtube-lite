@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+<script src="prismjs/prism.js"></script>
+<link rel="stylesheet" media="screen" href="prismjs/prism.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<link rel="stylesheet" media="screen" href="styles.css">
+<link rel="stylesheet" media="screen" href="table.css">
+<body style="height:100vh">
+    <div style="  font-size: 64px;text-align: center;margin: 40px auto;">angular-youtube-lite</div>    
+    <div class="panel -top container">
+        <div class="content">
+            The youtube iframe will stretch to fill your container's width size</br>
+            Assume you have defined your video container: </br>
+            <div style="margin-top:10px; max-width: 250px;">
+                <pre><code class="language-css">
+.custome-youtube-container {
+    width: 50%;
+}
+                </code></pre>
+            </div>  
+
+        </div>
+    </div>
+    
+    <div ng-app="demo-app">
+         <div ng-controller="mainCtrl">
+            <div class="panel container">
+                <div class="panel-heading">
+                    100%
+                </div>
+                <div class="panel-body">
+                    <style>
+                        /* Not recommended writing HTML structure like this, just put this here for easier to see*/
+                        .block {
+                            display: flex;
+                            margin: 10px auto;
+                        }
+                        .block .custome-youtube-container {
+                            width: 50%;
+                        }
+                    </style>
+                    <section id="cd-timeline" class="cd-container">
+                        <div class="block">
+                            <div class="custome-youtube-container" style="background-color: #42827b; text-align: center">
+                                50%
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="custome-youtube-container">
+                                <youtube video-id="zYcZC-rcYrc"></youtube>
+                            </div>
+                            <div style="margin-left: 40px;">
+                                <pre><code class="language-html">
+&lt;div class=&quot;custome-youtube-container&quot;&gt;
+    &lt;youtube video-id=&quot;zYcZC-rcYrc&quot;&gt;&lt;/youtube&gt;
+&lt;/div&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="custome-youtube-container">
+                                <youtube playlist="zYcZC-rcYrc,rAIXE6ilRQ0" hide-logo="true"></youtube>
+                            </div>
+                            <div style="margin-left: 40px;">
+                                <pre><code class="language-html">
+&lt;div class=&quot;custome-youtube-container&quot;&gt;
+    &lt;youtube playlist=&quot;zYcZC-rcYrc,rAIXE6ilRQ0&quot; hide-logo=&quot;true&quot;&gt;&lt;/youtube&gt;
+&lt;/div&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="custome-youtube-container">
+                                <youtube video-id="zYcZC-rcYrc" related-video="false"></youtube>
+                            </div>
+                            <div style="margin-left: 40px;">
+                                <pre><code class="language-html">
+&lt;div class=&quot;custome-youtube-container&quot;&gt;
+    &lt;youtube video-id=&quot;zYcZC-rcYrc&quot; related-video=&quot;false&quot;&gt;&lt;/youtube&gt;
+&lt;/div&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="custome-youtube-container">
+                                <youtube playlist-id="PL590L5WQmH8d7mHIqkUxpDQzYYif3c7xW"></youtube>
+                            </div>
+                            <div style="margin-left: 40px;">
+                                <pre><code class="language-html">
+&lt;div class=&quot;custome-youtube-container&quot;&gt;
+    &lt;youtube playlist-id=&quot;PL590L5WQmH8d7mHIqkUxpDQzYYif3c7xW&quot;&gt;&lt;/youtube&gt;
+&lt;/div&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="panel container">
+                <div class="content">
+                    <h4>Commonly Used Parameters</h4>
+                </div>
+            </div>
+            <div class="table-responsive-vertical shadow-z-1 container">
+            <!-- Table starts here -->
+                <table id="table" class="table table-hover table-mc-light-blue">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>DefaultValue</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>video-id</td>
+                            <td>Youtube video's ID</td>
+                            <td>None</td>
+                            <td>String</td>
+                        </tr>
+                        <tr>
+                            <td>playlist</td>
+                            <td>List of Youtube video's IDs, separated by commas</td>
+                            <td>None</td>
+                            <td>String</td>
+                        </tr>
+                        <tr>
+                            <td>playlist-id</td>
+                            <td>Youtube playlist's ID</td>
+                            <td>None</td>
+                            <td>String</td>
+                        </tr>
+                        <tr>
+                            <td>hide-logo</td>
+                            <td>Hide Youtube logo on embedded iframe</td>
+                            <td>False</td>
+                            <td>Boolean</td>
+                        </tr>
+                        <tr>
+                            <td>color</td>
+                            <td>Color theme of Youtube iframe, available values:&nbsp;["white","red"]</td>
+                            <td>"red"</td>
+                            <td>String</td>
+                        </tr>
+                        <tr>
+                            <td>autoplay</td>
+                            <td>Autoplay video when the youtube player loaded</td>
+                            <td>False</td>
+                            <td>Boolean</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="panel container">
+                <div class="content">
+                    <h4>Rarely Used Parameters</h4>
+                </div>
+            </div>
+            <div class="table-responsive-vertical shadow-z-1 container">
+            <!-- Table starts here -->
+                <table id="table" class="table table-hover table-mc-light-blue">
+                    <thead>
+                        <tr>                
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>DefaultValue</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>turn-cc-on</td>
+                            <td>If turn-cc-on="true", turn on CC when video start palying,</br> else, use user's reference settings on Youtube</td>
+                            <td>False</td>
+                            <td>Boolean</td>
+                        </tr>
+                        <tr>
+                            <td>related-video</td>
+                            <td>If related-video="false", </br> Youtube iframe doesn't show related video when video ends.</td>
+                            <td>True</td>
+                            <td>Boolean</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+         </div>
+    </div>
+</body>
+<script src="../angular-youtube-simple.js"></script>
+<script>
+    angular.module('demo-app', ['angular-youtube-simple']).controller('mainCtrl', ()=>{});
+</script>
+</html>

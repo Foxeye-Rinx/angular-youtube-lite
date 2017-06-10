@@ -1,0 +1,19 @@
+{
+  "name": "angular-youtube-simple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/angular-youtube-simple.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Foxeye-Rinx/angular-youtube-simple.git"
+  },
+  "author": "Foxeye-Rinx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Foxeye-Rinx/angular-youtube-simple/issues"
+  },
+  "homepage": "https://github.com/Foxeye-Rinx/angular-youtube-simple#readme"
+}
