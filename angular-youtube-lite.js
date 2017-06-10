@@ -68,7 +68,7 @@ let youtubeComponent = {
     template
 };
 
-angular.module('angular-youtube-simple', [])
+angular.module('angular-youtube-lite', [])
     .filter('trustThisUrl', ['$sce', $sce => {
         return val => {
             return $sce.trustAsResourceUrl(val);
