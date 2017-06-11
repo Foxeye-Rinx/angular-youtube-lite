@@ -11,8 +11,10 @@ Designed for application which doesn't need to use Youtube API.
 ```js
 angular.module('app', ['angular-youtube-lite']);
 ```
-According to [rscss](http://rscss.io/layouts.html) layouts definition, you should define your own video container,
+According to [rscss](http://rscss.io/layouts.html) layouts definition, you should define your own video container.
+
 The embedded video will stretch to fill your container's width size.
+
 Checkout [demo page](https://foxeye-rinx.github.io/angular-youtube-lite/)
 
 ## License
