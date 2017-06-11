@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Foxeye-Rinx/angular-youtube-simple.git"
+    "url": "git+https://github.com/Foxeye-Rinx/angular-youtube-lite.git"
   },
   "author": "Foxeye-Rinx",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Foxeye-Rinx/angular-youtube-simple/issues"
+    "url": "https://github.com/Foxeye-Rinx/angular-youtube-lite/issues"
   },
-  "homepage": "https://github.com/Foxeye-Rinx/angular-youtube-simple#readme",
+  "homepage": "https://github.com/Foxeye-Rinx/angular-youtube-lite#readme",
   "devDependencies": {
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-es2015": "^6.24.1",
