@@ -8,22 +8,22 @@
 <link rel="stylesheet" media="screen" href="styles.css">
 <link rel="stylesheet" media="screen" href="table.css">
 <body style="height:100vh">
-    <div style="  font-size: 64px;text-align: center;margin: 40px auto;">angular-youtube-lite</div>    
+    <div style="  font-size: 64px;text-align: center;margin: 40px auto;">angular-youtube-lite</div>
     <div class="panel -top container">
         <div class="content">
             The youtube iframe will stretch to fill your container's width size</br>
             Assume you have defined your video container: </br>
             <div style="margin-top:10px; max-width: 250px;">
                 <pre><code class="language-css">
-.custome-youtube-container {
+.custom-youtube-container {
     width: 50%;
 }
                 </code></pre>
-            </div>  
+            </div>
 
         </div>
     </div>
-    
+
     <div ng-app="demo-app">
          <div ng-controller="mainCtrl">
             <div class="panel container">
@@ -37,59 +37,59 @@
                             display: flex;
                             margin: 10px auto;
                         }
-                        .block .custome-youtube-container {
+                        .block .custom-youtube-container {
                             width: 50%;
                         }
                     </style>
                     <section id="cd-timeline" class="cd-container">
                         <div class="block">
-                            <div class="custome-youtube-container" style="background-color: #42827b; text-align: center">
+                            <div class="custom-youtube-container" style="background-color: #42827b; text-align: center">
                                 50%
                             </div>
                         </div>
                         <div class="block">
-                            <div class="custome-youtube-container">
+                            <div class="custom-youtube-container">
                                 <youtube video-id="zYcZC-rcYrc"></youtube>
                             </div>
                             <div style="margin-left: 40px;">
                                 <pre><code class="language-html">
-&lt;div class=&quot;custome-youtube-container&quot;&gt;
+&lt;div class=&quot;custom-youtube-container&quot;&gt;
     &lt;youtube video-id=&quot;zYcZC-rcYrc&quot;&gt;&lt;/youtube&gt;
 &lt;/div&gt;
                                 </code></pre>
                             </div>
                         </div>
                         <div class="block">
-                            <div class="custome-youtube-container">
+                            <div class="custom-youtube-container">
                                 <youtube playlist="zYcZC-rcYrc,rAIXE6ilRQ0" hide-logo="true"></youtube>
                             </div>
                             <div style="margin-left: 40px;">
                                 <pre><code class="language-html">
-&lt;div class=&quot;custome-youtube-container&quot;&gt;
+&lt;div class=&quot;custom-youtube-container&quot;&gt;
     &lt;youtube playlist=&quot;zYcZC-rcYrc,rAIXE6ilRQ0&quot; hide-logo=&quot;true&quot;&gt;&lt;/youtube&gt;
 &lt;/div&gt;
                                 </code></pre>
                             </div>
                         </div>
                         <div class="block">
-                            <div class="custome-youtube-container">
+                            <div class="custom-youtube-container">
                                 <youtube video-id="zYcZC-rcYrc" related-video="false"></youtube>
                             </div>
                             <div style="margin-left: 40px;">
                                 <pre><code class="language-html">
-&lt;div class=&quot;custome-youtube-container&quot;&gt;
+&lt;div class=&quot;custom-youtube-container&quot;&gt;
     &lt;youtube video-id=&quot;zYcZC-rcYrc&quot; related-video=&quot;false&quot;&gt;&lt;/youtube&gt;
 &lt;/div&gt;
                                 </code></pre>
                             </div>
                         </div>
                         <div class="block">
-                            <div class="custome-youtube-container">
+                            <div class="custom-youtube-container">
                                 <youtube playlist-id="PL590L5WQmH8d7mHIqkUxpDQzYYif3c7xW"></youtube>
                             </div>
                             <div style="margin-left: 40px;">
                                 <pre><code class="language-html">
-&lt;div class=&quot;custome-youtube-container&quot;&gt;
+&lt;div class=&quot;custom-youtube-container&quot;&gt;
     &lt;youtube playlist-id=&quot;PL590L5WQmH8d7mHIqkUxpDQzYYif3c7xW&quot;&gt;&lt;/youtube&gt;
 &lt;/div&gt;
                                 </code></pre>
@@ -163,7 +163,7 @@
             <!-- Table starts here -->
                 <table id="table" class="table table-hover table-mc-light-blue">
                     <thead>
-                        <tr>                
+                        <tr>
                             <th>Name</th>
                             <th>Description</th>
                             <th>DefaultValue</th>

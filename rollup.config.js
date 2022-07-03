@@ -5,11 +5,11 @@ import uglify from 'rollup-plugin-uglify';
 import babel from 'rollup-plugin-babel';
 export default {
     entry: 'src/angular-youtube-lite.js',
-    format: 'iife', 
+    format: 'iife',
     dest: 'docs/angular-youtube-lite.min.js',
     plugins: [
         eslint({
-            exclude: [              
+            exclude: [
                 '**/*.html'
             ]
         }),

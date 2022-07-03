@@ -1,6 +1,5 @@
 # angular-youtube-lite
 > Module provide responsive youtube iframe component, to help you embed youtube video in your angular application.
-Designed for application which doesn't need to use Youtube API.
 
 ## Installation
 
@@ -12,15 +11,21 @@ Designed for application which doesn't need to use Youtube API.
 angular.module('app', ['angular-youtube-lite']);
 ```
 
-According to [rscss](http://rscss.io/layouts.html) layouts definition, you should define your own video container.
+
+
+According to [rscss layouts](https://ricostacruz.com/rscss/layouts.html):
+
+> Components should be made in a way that they're reusable in different contexts
+
+You should define your own video container, which has the width, height, and the desired position for the \<youtube\> compoent as below:
 
 ```css
-.custome-youtube-container {
+.custom-youtube-container {
     width: 50%;
 }
 ```
 ```html
-<div class="custome-youtube-container">
+<div class="custom-youtube-container">
     <youtube video-id="zYcZC-rcYrc"></youtube>
 </div>
 ```
